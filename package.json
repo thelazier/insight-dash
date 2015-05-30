@@ -1,12 +1,12 @@
 {
-  "name": "insight-bitcore",
-  "description": "An open-source frontend for the Insight API. The Insight API provides you with a convenient, powerful and simple way to query and broadcast data on the bitcoin network and build your own services with it.",
+  "name": "insight-dash",
+  "description": "An open-source frontend for the Insight API. The Insight API provides you with a convenient, powerful and simple way to query and broadcast data on the dash network and build your own services with it.",
   "version": "0.2.5",
   "author": {
     "name": "Ryan X Charles",
     "email": "ryan@bitpay.com"
   },
-  "repository": "git://github.com/bitpay/insight.git",
+  "repository": "git://github.com/thelazier/insight-dash.git",
   "contributors": [
     {
       "name": "Matias Alejo Garcia",
@@ -27,26 +27,30 @@
     {
       "name": "Juan Ignacio Sosa Lopez",
       "email": "bechilandia@gmail.com"
+    },
+    {
+      "name": "TheLazieR Yip",
+      "email": "thelazier@gmail.com"
     }
   ],
   "bugs": {
-    "url": "https://github.com/bitpay/insight/issues"
+    "url": "https://github.com/thelazier/insight-dash/issues"
   },
-  "homepage": "https://github.com/bitpay/insight",
+  "homepage": "https://github.com/thelazier/insight-dash",
   "license": "MIT",
   "keywords": [
     "insight",
     "blockchain",
     "blockexplorer",
-    "bitcoin",
-    "bitcore",
+    "dash",
+    "darkcore",
     "front-end"
   ],
   "scripts": {
-    "start": "INSIGHT_PUBLIC_PATH=public node node_modules/.bin/insight-bitcore-api"
+    "start": "INSIGHT_PUBLIC_PATH=public node node_modules/.bin/insight-bitcore-api-dash"
   },
   "dependencies": {
-    "insight-bitcore-api": ">0.2.10"
+    "insight-bitcore-api-dash": "git+https://github.com/UdjinM6/insight-api-dash.git"
   },
   "devDependencies": {
     "bower": "~1.2.8",

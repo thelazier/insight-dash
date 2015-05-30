@@ -50,7 +50,7 @@
     "start": "INSIGHT_PUBLIC_PATH=public node node_modules/.bin/insight-bitcore-api-dash"
   },
   "dependencies": {
-    "insight-bitcore-api-dash": "git+https://github.com/UdjinM6/insight-api-dash.git"
+    "insight-bitcore-api-dash": "git+https://github.com/thelazier/insight-api-dash.git"
   },
   "devDependencies": {
     "bower": "~1.2.8",

@@ -91,6 +91,10 @@
             </div> <!-- END OF PANEL BODY -->
           </div> <!-- END OF PANEL-DEFAULT -->
           <div class="small" style="margin-left:0.7em; word-wrap:break-word;" data-ng-class="{true: 'v_highlight', false: ''}[from_vin == true && v_index == vin.n]" >
+              <p class="small">
+                <strong translate>Index</strong>
+                <span class="text-muted">{{vin.n}}</span>
+              </p>
             <p><strong>scriptSig</strong></p>
               <div data-ng-repeat="item in vin.scriptSig.asm | split:' '" class="">
                 <p class="col-md-11 ellipsis text-muted">{{item}}</p>
@@ -167,6 +171,10 @@
             </div>
           </div>
           <div style="padding-left: 0.7em; padding-bottom: 2em; word-wrap:break-word" data-ng-class="{true: 'v_highlight', false: ''}[from_vout == true && v_index == vout.n]">
+              <p class="small">
+                <strong translate>Index</strong>
+                <span class="text-muted">{{vout.n}}</span>
+              </p>
               <p class="small">
                 <strong translate>Type</strong>
                 <span class="text-muted">{{vout.scriptPubKey.type}}</span>

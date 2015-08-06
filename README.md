@@ -1,4 +1,4 @@
-# *insight*
+# *insight-dash*
 
 *insight* is an open-source bitcoin blockchain explorer with complete REST
 and websocket APIs. Insight runs in NodeJS, uses AngularJS for the
@@ -7,6 +7,8 @@ front-end and LevelDB for storage.
 Check some screenshots and more details at [insight's project homepage](http://insight.is/).
 
 *Insight* project is now split into two repositories. One for the [API](https://github.com/bitpay/insight-api) and for the front-end. This repository is for the front-end, which will install the API as a NPM dependency.
+
+*Insight-Dash* is modified for Dash network [dashpay.io](https://www.dashpay.io)
 
 ## Prerequisites
 
@@ -19,7 +21,7 @@ Check some screenshots and more details at [insight's project homepage](http://i
 
   To install Insight, clone the main repository:
 
-    $ git clone https://github.com/bitpay/insight.git && cd insight
+    $ git clone https://github.com/thelazier/insight-dash.git && cd insight-dash
 
   Install dependencies:
 
@@ -34,7 +36,7 @@ Check some screenshots and more details at [insight's project homepage](http://i
     http://localhost:3001
 
   If *insight* reports problems connecting to **bitcoind** please check the CONFIGURATION section of 
-  [insight-api README](https://github.com/bitpay/insight-api/blob/master/README.md). To set the 
+  [insight-api-dash README](https://github.com/thelazier/insight-api-dash/blob/master/README.md). To set the 
   environment variables run something like:
   
      $ INSIGHT_NETWORK=livenet BITCOIND_USER=user BITCOIND_PASS=pass INSIGHT_PUBLIC_PATH=public  npm start
@@ -43,7 +45,7 @@ Check some screenshots and more details at [insight's project homepage](http://i
   Please note that the app will need to sync its internal database
   with the blockchain state, which may take some time. You can check
   sync progress from within the web interface. More details about that process
-  on [insight-api README](https://github.com/bitpay/insight-api/blob/master/README.md). 
+  on [insight-api-dash README](https://github.com/bitpay/insight-api/blob/master/README.md). 
   
   
 ## Nginx Setup
@@ -130,11 +132,11 @@ compile***.
 
 ## Note
 
-For more details about the *insight API* configs and end-point, just go to [insight API github repository](https://github.com/bitpay/insight-api) or read the [documentation](https://github.com/bitpay/insight-api/blob/master/README.md)
+For more details about the *insight API* configs and end-point, just go to [insight API github repository](https://github.com/thelazier/insight-api-dash) or read the [documentation](https://github.com/thelazier/insight-api-dash/blob/master/README.md)
 
 ## Contribute
 
-Contributions and suggestions are welcomed at [insight github repository](https://github.com/bitpay/insight).
+Contributions and suggestions are welcomed at [insight-dash github repository](https://github.com/thelazier/insight-dash).
 
 
 ## License

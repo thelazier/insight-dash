@@ -45,8 +45,7 @@ angular.module('insight.currency').controller('CurrencyController',
 
       if (currency === 'USD') {
         Currency.get({}, function(res) {
-          $rootScope.currency.factor = $rootScope.currency.bitfinex = res.data.bitfinex;
-          $rootScope.currency.factor = $rootScope.currency.cryptsy = res.data.cryptsy;
+          $rootScope.currency.factor = $rootScope.currency.coincap = res.data.coincap;
         });
       } else if (currency === 'mDASH') {
         $rootScope.currency.factor = 1000;
@@ -59,8 +58,7 @@ angular.module('insight.currency').controller('CurrencyController',
 
     // Get initial value
     Currency.get({}, function(res) {
-      $rootScope.currency.factor = $rootScope.currency.bitfinex = res.data.bitfinex;
-      $rootScope.currency.factor = $rootScope.currency.cryptsy = res.data.cryptsy;
+      $rootScope.currency.factor = $rootScope.currency.coincap = res.data.coincap;
     });
 
   });

@@ -8,7 +8,7 @@ Check some screenshots and more details at [insight's project homepage](http://i
 
 *Insight* project is now split into two repositories. One for the [API](https://github.com/bitpay/insight-api) and for the front-end. This repository is for the front-end, which will install the API as a NPM dependency.
 
-*Insight-Dash* is modified for Dash network [dashpay.io](https://www.dashpay.io)
+*Insight-Dash* is modified for Dash network [dash.org](https://www.dash.org)
 
 ## Prerequisites
 

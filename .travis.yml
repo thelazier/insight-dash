@@ -1,4 +1,9 @@
 language: node_js
 node_js:
-- '0.10'
-install: npm install
+  - "0.10"
+install:
+  - npm install grunt-cli
+  - npm install -g bower
+  - npm install
+  - bower install
+  - grunt compile

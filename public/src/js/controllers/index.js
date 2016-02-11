@@ -20,11 +20,20 @@ angular.module('insight.system').controller('IndexController',
 
     var _startSocket = function() { 
       socket.emit('subscribe', 'inv');
-      socket.on('tx', function(tx) {
+
+      var _processTx = function(tx) {
         $scope.txs.unshift(tx);
         if (parseInt($scope.txs.length, 10) >= parseInt(TRANSACTION_DISPLAYED, 10)) {
           $scope.txs = $scope.txs.splice(0, TRANSACTION_DISPLAYED);
         }
+      }
+
+      socket.on('tx', function(tx) {
+        _processTx(tx);
+      });
+
+      socket.on('ix', function(tx) {
+        _processTx(tx);
       });
 
       socket.on('block', function() {

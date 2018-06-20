@@ -47,10 +47,13 @@
     "front-end"
   ],
   "scripts": {
-    "start": "INSIGHT_PUBLIC_PATH=public node node_modules/.bin/insight-bitcore-api-dash"
+    "start": "INSIGHT_PUBLIC_PATH=public node node_modules/.bin/insight-bitcore-api-dash",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
-    "insight-bitcore-api-dash": "git+https://github.com/thelazier/insight-api-dash.git"
+    "insight-bitcore-api-dash": "git+https://github.com/thelazier/insight-api-dash.git",
+    "snyk": "^1.83.0"
   },
   "devDependencies": {
     "bower": "~1.2.8",
@@ -64,5 +67,6 @@
     "grunt-css": "~0.5.4",
     "grunt-markdown": "~0.5.0",
     "grunt-angular-gettext": "^0.2.15"
-  }
+  },
+  "snyk": true
 }
